@@ -4,9 +4,9 @@ export default {
   // https://expressjs.com/en/guide/behind-proxies.html
   trustProxy: boolOrString(process.env.TRUST_PROXY || 'loopback, linklocal, uniquelocal'),
   // Jacket instance url
-  jackettUrl: process.env.JACKETT_URL || 'http://37.187.96.240:9117',
+  jackettUrl: process.env.JACKETT_URL || 'http://45.154.87.104:9117',
   // Jacket API key
-  jackettApiKey: process.env.JACKETT_API_KEY || 'nn6a4ekizom285jrsgs5koivj7wlyx9s',
+  jackettApiKey: process.env.JACKETT_API_KEY || '6ebybwn3luj2nwyx4063naqjx82hvwuj',
   // Data folder for cache database, torrent files ... Must be persistent in production
   dataFolder: process.env.DATA_FOLDER || '/tmp',
   // Enable localtunnel feature
