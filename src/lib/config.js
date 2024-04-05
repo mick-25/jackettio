@@ -4,15 +4,15 @@ export default {
   // https://expressjs.com/en/guide/behind-proxies.html
   trustProxy: boolOrString(process.env.TRUST_PROXY || 'loopback, linklocal, uniquelocal'),
   // Jacket instance url
-  jackettUrl: process.env.JACKETT_URL || 'http://195.154.231.70:9117',
+  jackettUrl: process.env.JACKETT_URL='http://195.154.231.70:9117',
   // Jacket API key
-  jackettApiKey: process.env.JACKETT_API_KEY || 'ar2u3emdwocp9cqcbyiugot0t17s65yl',
+  jackettApiKey: process.env.JACKETT_API_KEY='ar2u3emdwocp9cqcbyiugot0t17s65yl',
   // Data folder for cache database, torrent files ... Must be persistent in production
-  dataFolder: process.env.DATA_FOLDER || '/tmp',
+  dataFolder: process.env.DATA_FOLDER='/tmp',
   // Enable localtunnel feature
   localtunnel: (process.env.LOCALTUNNEL || 'false') === 'true',
   // Addon ID
-  addonId: process.env.ADDON_ID || 'community.stremio.jackettio',
+  addonId: process.env.ADDON_ID='community.stremio.jackettio',
   // When hosting an instance with a private tracker, you can configure this setting to:
   // - Request the user's passkey on the /configure page.
   // - Replace your passkey with theirs when sending uncached torrents to the debrid.
@@ -37,7 +37,7 @@ export default {
     forceCacheNextEpisode: (process.env.DEFAULT_FORCE_CACHE_NEXT_EPISODE || 'false') === 'true',
     sortCached: sortCommaListToArray(process.env.DEFAULT_SORT_CACHED || 'quality:true, size:true'),
     sortUncached: sortCommaListToArray(process.env.DEFAULT_SORT_UNCACHED || 'seeders:true'),
-    indexers: commaListToArray(process.env.DEFAULT_INDEXERS || 'all'),
+    indexers: commaListToArray(process.env.DEFAULT_INDEXERS='all'),
     indexerTimeoutSec: parseInt(process.env.DEFAULT_INDEXER_TIMEOUT_SEC || '60'),
     passkey: ''
   },
