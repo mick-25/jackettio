@@ -6,7 +6,7 @@ module.exports = {
   // Jacket instance url
   jackettUrl: process.env.JACKETT_URL || 'http://82.172.152.9:9117',
   // Jacket API key
-  jackettApiKey: process.env.JACKETT_API_KEY || '5mprcfoumvjvn1yv9o7lt89yx51jod7z',
+  jackettApiKey: process.env.JACKETT_API_KEY || 'kptut9ad0fqgllyeykn27dhr9p6cd3hq',
   // Data folder for cache database, torrent files ... Must be persistent in production
   dataFolder: process.env.DATA_FOLDER || '/tmp',
   // Enable localtunnel feature
