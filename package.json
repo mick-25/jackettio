@@ -1,5 +1,5 @@
 {
-  "name": "jackettio",
+  "name": "jackeddio",
   "version": "1.4.0",
   "description": "Jackett and Debrid on Stremio",
   "main": "src/index.js",
